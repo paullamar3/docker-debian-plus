@@ -11,6 +11,6 @@ ENV LANG    C.UTF-8
 ENV TERM    xterm
 
 # Add utility scripts: p_addpkgs, p_adduser
-COPY p_* gosu /usr/local/bin/
+COPY clocal/p_* clocal/gosu /usr/local/bin/
 RUN chmod +x /usr/local/bin/p_* /usr/local/bin/gosu
 
